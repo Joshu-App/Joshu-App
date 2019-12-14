@@ -1,18 +1,11 @@
 <div class="col-xs-12">
     <div class="col-xs-6" style="padding-top:5%">
-        <button mat-icon-button class="menuButton" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-            <mat-icon>more_vert</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>
-              <mat-icon>shopping_cart</mat-icon>
-              <span>Tienda</span>
-            </button>
-            <button mat-menu-item disabled>
-              <mat-icon>format_list_numbered</mat-icon>
-              <span>Ranking</span>
-            </button>
-          </mat-menu>
+        <div class="col-xs-3">
+          <button mat-button style="background-color: yellow;"><mat-icon>shopping_cart</mat-icon></button>
+        </div>
+        <div class="col-xs-3">
+          <button mat-button style="background-color: yellow;"><mat-icon>format_list_numbered</mat-icon> Ranking</button>
+        </div>
     </div>
     <div class="col-xs-6">
       <app-coins></app-coins>
