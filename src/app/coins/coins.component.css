@@ -1,0 +1,9 @@
+::ng-deep .mat-progress-bar-fill{
+    background-color: yellow;
+}
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+.mat-icon{
+    color: yellow;  
+}
