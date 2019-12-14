@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ParticlesModule } from 'angular-particle';
 import { CharacterImageComponent } from './character-image/character-image.component';
 import { CoinsComponent } from './coins/coins.component';
+import { ShipImageComponent } from './ship-image/ship-image.component';
+import { CharacterDescriptionComponent } from './ship-description/ship-description.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { CoinsComponent } from './coins/coins.component';
     AppComponent,
     CharacterComponent,
     CharacterImageComponent,
-    CoinsComponent
+    CoinsComponent,
+    ShipImageComponent,
+    CharacterDescriptionComponent
   ],
   imports: [
     BrowserModule,
