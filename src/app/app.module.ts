@@ -7,12 +7,14 @@ import {MatButtonModule, MatMenuModule, MatIconModule} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ParticlesModule } from 'angular-particle';
+import { CharacterImageComponent } from './character-image/character-image.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharacterComponent
+    CharacterComponent,
+    CharacterImageComponent
   ],
   imports: [
     BrowserModule,
