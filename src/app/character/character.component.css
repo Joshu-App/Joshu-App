@@ -4,6 +4,7 @@
     font-size:48px !important;
 }
 
-::ng-deep .mat-icon{
-    align-items: center;
-}
+::ng-deep .mat-icon-button .mat-button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
