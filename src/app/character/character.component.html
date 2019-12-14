@@ -1,6 +1,22 @@
 <div class="col-xs-12">
-    <div class="col-xs-6">
-        <button mat-button>Menu!</button>
+    <div class="col-xs-6" style="padding:5%">
+        <button mat-icon-button class="menuButton" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon>
+              <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+          </mat-menu>
     </div>
     <div class="col-xs-6">
         <button mat-button></button>
