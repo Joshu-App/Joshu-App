@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CharacterComponent } from './character/character.component';
-import {MatButtonModule, MatMenuModule, MatIconModule} from '@angular/material';
+import { MatButtonModule, MatMenuModule, MatIconModule, MatProgressBarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ParticlesModule } from 'angular-particle';
+import { CoinsComponent } from './coins/coins.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharacterComponent
+    CharacterComponent,
+    CoinsComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,8 @@ import { ParticlesModule } from 'angular-particle';
     ParticlesModule, 
     MatMenuModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
