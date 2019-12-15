@@ -11,7 +11,19 @@ import { CharacterImageComponent } from './character-image/character-image.compo
 import { CoinsComponent } from './coins/coins.component';
 import { ShipImageComponent } from './ship-image/ship-image.component';
 import { CharacterDescriptionComponent } from './ship-description/ship-description.component';
+import { RouterModule, Routes } from '@angular/router';
+import { RankingComponent } from './ranking/ranking.component';
+import { GamesComponent } from './games/games.component';
+import { ShopComponent } from './shop/shop.component';
 
+
+export const routes: Routes = [
+  {path: '', redirectTo: 'character', pathMatch: 'full'},
+  {path: 'character', component: CharacterComponent},
+  {path: 'ranking', component: RankingComponent},
+  {path: 'games', component: GamesComponent},
+  {path: 'shop', component: ShopComponent},
+]
 
 @NgModule({
   declarations: [
@@ -20,7 +32,10 @@ import { CharacterDescriptionComponent } from './ship-description/ship-descripti
     CharacterImageComponent,
     CoinsComponent,
     ShipImageComponent,
-    CharacterDescriptionComponent
+    CharacterDescriptionComponent,
+    RankingComponent,
+    GamesComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +44,11 @@ import { CharacterDescriptionComponent } from './ship-description/ship-descripti
     MatMenuModule,
     MatIconModule,
     BrowserAnimationsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule { }
