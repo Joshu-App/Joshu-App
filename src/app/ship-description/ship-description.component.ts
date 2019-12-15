@@ -15,7 +15,7 @@ export class CharacterDescriptionComponent implements OnInit {
   inteligencia : number = 100
 
   ngOnInit() {
-    this.name = "Casimiro"
+    this.name = "AZT198"
     this.fuerza = 20;
     this.velocidad = 70;
     this.inteligencia = 100

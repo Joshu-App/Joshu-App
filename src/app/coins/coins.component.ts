@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoinsComponent implements OnInit {
 
-  coins = 999999999
+  coins = 9999
   level = 20
 
   constructor() { }
